@@ -22,7 +22,7 @@ class App_API(unittest.TestCase):
         self.base_url = 'http://192.168.1.241:88'
         self.app = Public.APPApi(self.base_url)
       
-    def test_2list(self):                                      #+++++++++++++++++++APP列表
+    def test_2list(self):                                      #++++++++++++++++++++APP列表
         '''APP列表'''
         response = self.app.APP_list()
         self.assertEqual(response.status_code,200)
